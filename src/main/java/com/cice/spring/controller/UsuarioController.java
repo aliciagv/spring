@@ -20,6 +20,7 @@ public class UsuarioController {
     
     public ModelAndView listarUsuarios(){
         ModelAndView mav=new ModelAndView("usuarios");
+        
         return mav;
     
     }
