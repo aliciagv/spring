@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Usuarios</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="usuario: ${usuarios}">
+                    <td><span th:text="${usuario.id}"></span></td>
+                    <td><span th:text="${usuario.nombre}"></span></td>
+                    <td><span th:text="${usuario.apellidos}"></span></td>
+                </tr>
+            </tbody>
+        </table>
+        <form action="#" th:action="@{usuarios/insertausuario}" th:object="">
+            <p> Nombre: <input type="text" 
+        </form>
+    </body>
+</html>
